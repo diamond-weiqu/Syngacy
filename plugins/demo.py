@@ -12,8 +12,8 @@ class Plugin1(Model_Plugin):
     #实现接入点的接口
     def load(self):
         info = {
-            'package':'xyz.veltgop.administor',
-            'name': '管理员',
+            'package':'xyz.veltgop.admin',
+            'name': '机器人管理员',
             'author': '官方',
             'version': version
         }
