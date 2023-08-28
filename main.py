@@ -33,11 +33,14 @@ class Plugin():
 
     def check_plugin(self, AllPlugins):
         return any(self == Plugin['package'] for Plugin in AllPlugins)
+
+
 class Event():
     def __init__(self):
         pass
-    #def Message_Event(self,):
-    #帮我写一个处理go-cqhttp上报的函数
+    # Message_Event(self,):
+    # 帮我写一个处理go-cqhttp上报的函数
+
 
 class Action():
     def __init__(self):
@@ -90,5 +93,7 @@ if __name__ == '__main__':
     @app.route('/', methods=["POST"])
     def event_listener():
         return 'OK'
+
+
     logger.info("Natrium 框架启动成功！")
     app.run(debug=False, host='127.0.0.1', port=5701)

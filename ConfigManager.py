@@ -1,4 +1,3 @@
-from main import *
 import yaml, json
 class Config():
     def __init__(self,package,mode="json",name=None):
